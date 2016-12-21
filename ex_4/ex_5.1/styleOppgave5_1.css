@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+body{
+	margin: 0;
+}
+
+#animasjonwrap{
+	width: 1260px;
+	height: 650px;
+	background-color: rgb(250, 150, 200);
+	margin: auto;
+	position: relative;
+	}
+
+#animasjonwrap *{
+	position: absolute;
+}
+
+#SliderBox{
+	left: 0px;
+	height: 100px;
+	width: 100px;
+	background-color: rgb(200, 120, 160);
+	-webkit-animation-name: SliderBoxMoving;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes SliderBoxMoving{
+	0%{
+		top: 0px;
+		left: 0px;
+		bottom: 550px;
+		right: 1160px;
+	}
+	25%{
+		top: 0px;
+		left: 1160px;
+		bottom: 550px;
+		right: 0px;
+	}
+	50%{
+		top: 550px;
+		left: 1160px;
+		bottom: 550px;
+		right: 1160px;
+	}
+	75%{
+		top: 550px;
+		left:0px;
+		bottom:0px;
+		right: 1160px;
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+		bottom: 550px;
+		right: 1160px;
+	}
+}

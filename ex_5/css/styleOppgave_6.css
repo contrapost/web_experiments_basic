@@ -1,0 +1,712 @@
+@charset "utf-8";
+
+body{
+	margin: 0;
+	background-color: rgb(150, 150, 150);
+}
+
+#animasjonwrap{
+	width: 960px;
+	height: 600px;
+	background-color: rgb(150, 200, 250);
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+	-webkit-animation-name: ColorBevegerSeg;
+	-webkit-animation-duration: 39s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes ColorBevegerSeg{
+	0%{
+		background-color: rgb(150, 200, 250);
+		}
+	20%{
+		background-color: rgb(150, 200, 250);
+		}
+	100%{
+		background-color: rgb(25, 25, 90);
+	}
+}
+
+#animasjonwrap *{
+	position: absolute;
+}
+
+#bakgrunn{
+	height: 100px;
+	width: 960px;
+	bottom: 0px;
+	-webkit-animation-name: bakgrunnBevegerSeg;
+	-webkit-animation-duration: 9s;
+	-webkit-animation-delay: 12s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bakgrunnBevegerSeg{
+	from{
+		bottom: 0px;
+		}
+	to{
+		bottom: -500px;
+	}
+}
+
+#overflate{
+	background-image: url("../bilder/green.png");
+	height: 20px;
+	width: 960px;
+	bottom: 0px;
+}
+
+#hus{
+	width: 470px;
+	height: 330px;
+	bottom: 5px;
+	left: 260px;
+
+}
+
+#waterTank{
+	width: 100px;
+	height: 230px;
+	bottom: 15px;
+	left: 80px;
+}
+
+#tre{
+	width: 300px;
+	height: 350px;
+	bottom: 10px;
+	left: 650px;
+	-webkit-transition: width 3s linear, height 3s linear, left 3s linear;
+}
+
+#signOnTree{
+	background-color: rgb(173, 255, 47);
+	width: 70px;
+	height: 20px;
+	right: 50px;
+	bottom: 200px;
+	color: rgb(205, 92, 92);
+	line-height: 20px;
+	font-family: sans-serif;
+	font-size: 14px;
+	transform: rotate(-45deg);
+	z-index: 1;
+	cursor: pointer;
+	text-align: center;
+}
+
+#signOnTree:hover ~ #tre{
+	width: 400px;
+	height: 500px;
+	left: 600px;
+}
+
+#fence{
+	background-image: url("../bilder/fence2.png");
+	height: 80px;
+	width: 960px;
+	bottom: 10px;
+	-webkit-transition: height 2s linear;
+}
+
+#signOnFence{
+	background-color: rgb(173, 255, 47);
+	width: 60px;
+	height: 20px;
+	left: 430px;
+	bottom: 38px;
+	color: rgb(205, 92, 92);
+	line-height: 20px;
+	font-family: sans-serif;
+	font-size: 14px;
+	transform: rotate(25deg);
+	z-index: 1;
+	cursor: pointer;
+	text-align: center;
+	-webkit-transition: height 1s linear, width 1s linear, font-size 1s linear, transform 1s linear;
+}
+
+#signOnFence:hover ~ #fence{
+	height: 0px;
+}
+
+#signOnFence:hover{
+	height: 0px;
+	width: 0px;
+	font-size: 0px;
+	transform: rotate(360deg);
+}
+
+
+#cloud1{
+	width: 17px;
+	height: 6px;
+	top: -100px;
+	left: 100px;
+	-webkit-animation-name: sky1BevegerSeg;
+	-webkit-animation-duration: 7s;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sky1BevegerSeg{
+	from{
+		top: -100px;
+		width: 17px;
+		height: 6px;
+	}
+	to{
+		top: 500px;
+		width: 175px;
+		height: 65px;
+	}
+}
+
+#cloud2{
+	width: 17px;
+	height: 6px;
+	top: -100px;
+	right: 480px;
+	-webkit-animation-name: sky2BevegerSeg;
+	-webkit-animation-duration: 27s;
+	-webkit-animation-delay: 3s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sky2BevegerSeg{
+	0%{
+		top: -100px;
+		width: 17px;
+		height: 6px;
+		right: 480px;
+	}
+	14%{
+		top: 250px;
+		width: 90px;
+		height: 28px;
+		right: 320px;
+	}
+	20%{
+		top: 360px;
+		width: 150px;
+		height: 58px;
+		right: 180px;
+	}
+	25%{
+		top: 500px;
+		width: 200px;
+		height: 90px;
+		right: 100px;
+	}
+	99%{
+		top: 500px;
+		width: 200px;
+		height: 90px;
+		right: 100px;
+	}
+	100%{
+		top: 900px;
+		width: 200px;
+		height: 90px;
+		right: 100px;
+	}
+}
+
+#girl{
+	width: 75px;
+	height: 150px;
+	bottom: 5px;
+	left: -100px;
+	-webkit-animation-name: girlBevegerSeg;
+	-webkit-animation-duration: 25s;
+	-webkit-animation-delay: 7s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes girlBevegerSeg{
+	0%{
+		bottom: 5px;
+		left: -100px;
+	}
+	8%{
+		bottom: 5px;
+		left: 0px;
+	}
+	14%{
+		bottom: 5px;
+		left: 135px;
+	}
+	18%{
+		bottom: 70px;
+		left: 135px;;
+	}
+	85%{
+		bottom: 70px;
+		left: 135px;;
+	}
+	90%{
+		bottom: 55px;
+		left: 100px;;
+	}
+	100%{
+		bottom: 55px;
+		left: 100px;;
+	}
+}
+
+#boy{
+	width: 75px;
+	height: 150px;
+	bottom: 5px;
+	right: -100px;
+	-webkit-animation-name: boyBevegerSeg;
+	-webkit-animation-duration: 25s;
+	-webkit-animation-delay: 7s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes boyBevegerSeg{
+	0%{
+		bottom: 5px;
+		right: -100px;
+	}
+	8%{
+		bottom: 5px;
+		right: 0px;
+	}
+	14%{
+		bottom: 5px;
+		right: 165px;
+	}
+	18%{
+		bottom: 60px;
+		right: 165px;
+	}
+	88%{
+		bottom: 60px;
+		right: 165px;
+	}
+	89%{
+		bottom: 45px;
+		right: 145px;
+	}
+	90%{
+		bottom: 60px;
+		right: 165px;
+	}
+	91%{
+		bottom: 85px;
+		right: 219px;
+	}
+	92%{
+		bottom: 110px;
+		right: 273px;
+	}
+	93%{
+		bottom: 135px;
+		right: 327px;
+	}
+	94%{
+		bottom: 160px;
+		right: 381px;
+	}
+	95%{
+		bottom: 160px;
+		right: 435px;
+	}
+	96%{
+		bottom: 139px;
+		right: 489px;
+	}
+	97%{
+		bottom: 118px;
+		right: 543px;
+	}
+	98%{
+		bottom: 97px;
+		right: 597px;
+	}
+	99%{
+		bottom: 76px;
+		right: 651px;
+	}
+	100%{
+		bottom: 55px;
+		right: 705px;
+	}
+}
+
+
+#cloud3{
+	width: 17px;
+	height: 6px;
+	top: -100px;
+	left: 200px;
+	-webkit-animation-name: sky3BevegerSeg;
+	-webkit-animation-duration: 9s;
+	-webkit-animation-delay: 12s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sky3BevegerSeg{
+	from{
+		top: -100px;
+		width: 17px;
+		height: 6px;
+	}
+	to{
+		top: 700px;
+		width: 175px;
+		height: 65px;
+	}
+}
+
+#cloud4{
+	width: 32px;
+	height: 19px;
+	top: -100px;
+	left: 450px;
+	-webkit-animation-name: sky4BevegerSeg;
+	-webkit-animation-duration: 9s;
+	-webkit-animation-delay: 13s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sky4BevegerSeg{
+	from{
+		top: -100px;
+		width: 32px;
+		height: 19px;
+	}
+	to{
+		top: 700px;
+		width: 250px;
+		height: 69px;
+	}
+}
+
+#cloud5{
+	width: 16px;
+	height: 8px;
+	top: -100px;
+	left: 620px;
+	-webkit-animation-name: sky5BevegerSeg;
+	-webkit-animation-duration: 7s;
+	-webkit-animation-delay: 14s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sky5BevegerSeg{
+	from{
+		top: -100px;
+		width: 16px;
+		height: 8px;
+	}
+	to{
+		top: 700px;
+		width: 300px;
+		height: 95px;
+	}
+}
+
+#cloud6{
+	width: 16px;
+	height: 8px;
+	top: -100px;
+	left: 480px;
+	-webkit-animation-name: sky6BevegerSeg;
+	-webkit-animation-duration: 8s;
+	-webkit-animation-delay: 19s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sky6BevegerSeg{
+	from{
+		top: -100px;
+		width: 16px;
+		height: 8px;
+	}
+	to{
+		top: 700px;
+		width: 300px;
+		height: 95px;
+	}
+}
+
+#cloud7{
+	width: 16px;
+	height: 8px;
+	top: -100px;
+	left: 700px;
+	-webkit-animation-name: sky7BevegerSeg;
+	-webkit-animation-duration: 9s;
+	-webkit-animation-delay: 23s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sky7BevegerSeg{
+	from{
+		top: -100px;
+		width: 16px;
+		height: 8px;
+	}
+	to{
+		top: 700px;
+		width: 300px;
+		height: 95px;
+	}
+}
+
+#cloud8{
+	width: 16px;
+	height: 8px;
+	top: -100px;
+	left: 355px;
+	-webkit-animation-name: sky8BevegerSeg;
+	-webkit-animation-duration: 7s;
+	-webkit-animation-delay: 27s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sky8BevegerSeg{
+	from{
+		top: -100px;
+		width: 16px;
+		height: 8px;
+	}
+	to{
+		top: 700px;
+		width: 300px;
+		height: 95px;
+	}
+}
+
+#cloud9{
+	width: 16px;
+	height: 8px;
+	top: -100px;
+	left: 510px;
+	-webkit-animation-name: sky9BevegerSeg;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-delay: 30s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sky9BevegerSeg{
+	from{
+		top: -100px;
+		width: 16px;
+		height: 8px;
+	}
+	to{
+		top: 700px;
+		width: 300px;
+		height: 95px;
+	}
+}
+
+#cloud10{
+	width: 64px;
+	height: 32px;
+	top: -100px;
+	left: 120px;
+	-webkit-animation-name: sky10BevegerSeg;
+	-webkit-animation-duration: 7s;
+	-webkit-animation-delay: 16s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sky10BevegerSeg{
+	from{
+		top: -100px;
+		width: 64px;
+		height: 32px;
+	}
+	to{
+		top: 700px;
+		width: 550px;
+		height: 170px;
+	}
+}
+
+#cloudWithCat{
+	width: 300px;
+	height: 150px;
+	bottom: 700px;
+	left: 150px;
+	cursor: pointer;
+	-webkit-animation-name: cloudWithCatBevegerSeg;
+	-webkit-animation-duration: 8s;
+	-webkit-animation-delay: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cloudWithCatBevegerSeg{
+	from{
+		bottom: 700px;
+		left: 150px;
+	}
+	to{
+		bottom: -150px;
+		left: 500px;
+	}
+}
+
+#cloudWithCat:hover{
+					-webkit-animation-play-state: paused;
+}
+
+#cloudForCat{
+	width: 300px;
+	height: 150px;
+	bottom: 0px;
+}
+
+#cat{
+	width: 150px;
+	height: 70px;
+	bottom: 70px;
+	left: 65px;
+}
+
+#textOnCloud{
+	width: 90px;
+	height: 20px;
+	left: 90px;
+	bottom: 40px;
+	color: rgb(224, 255, 255);
+	line-height: 20px;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+#TractorInTheSkyWithDiamonds{
+	width: 300px;
+	height: 300px;
+	bottom: 0px;
+	left: -300px;
+	-webkit-animation-name: TractorInTheSkyWithDiamondsBevegerSeg;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-delay: 19s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes TractorInTheSkyWithDiamondsBevegerSeg{
+	from{
+		bottom: 0px;
+		left: -300px;
+	}
+	to{
+		bottom: 0px;
+		left: 1050px;
+	}
+}
+
+#tractor{
+	width: 190px;
+	height: 117px;
+	left: 50px;
+	bottom: 0px;
+}
+
+#fin{
+	width: 0px;
+	height: 0px;
+	top: -150px;
+	left: 480px;
+	font-family: sans-serif;
+	text-align: center;
+	line-height: 100px;
+	font-size: 0px;
+	color: rgb(255, 215, 0);
+	-webkit-animation-name: FinBevegerSeg;
+	-webkit-animation-duration: 7s;
+	-webkit-animation-delay: 37s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes FinBevegerSeg{
+	from{
+		top: -150px;
+		width: 0px;
+		height: 0px;
+		font-size: 0px;
+		transform: rotate(0deg);
+		color: rgb(25, 25, 115);
+	}
+	to{
+		top: 250px;
+		width: 400px;
+		height: 100px;
+		font-size: 95px;
+		transform: rotate(360deg);
+		color: rgb(255, 215, 0);
+	}
+}
+
+#sun{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(255, 255, 224);
+	border-radius: 50%;
+	left: 100px;
+	top: -100px;
+	-webkit-animation-name: SunBevegerSeg;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-delay: 12s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes SunBevegerSeg{
+	0%{
+		top: -100px;
+		}
+	20%{
+		top: 100px;
+	}
+	90%{
+		top: 600px;
+	}
+	100%{
+		top: 900px;
+	}
+}

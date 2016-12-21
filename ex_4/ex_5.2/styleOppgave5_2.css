@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+body{
+	margin: 0;
+}
+
+#animasjonwrap{
+	width: 1260px;
+	height: 650px;
+	background-color: rgb(250, 150, 200);
+	margin: auto;
+	position: relative;
+	}
+
+#animasjonwrap *{
+	position: absolute;
+}
+
+.SliderBox{
+	left: 0px;
+	height: 100px;
+	width: 100px;
+	background-color: rgb(200, 120, 160);
+}
+
+.SliderBox:hover{
+	-webkit-animation-play-state: paused;
+}
+
+.First{
+	-webkit-animation-name: SliderBoxFirstMoving;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.Secont{
+	-webkit-animation-name: SliderBoxSecontMoving;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 5s;
+}
+
+.Third{
+	-webkit-animation-name: SliderBoxThirdMoving;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 10s;
+}
+
+.Fourth{
+	-webkit-animation-name: SliderBoxFourthMoving;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 15s;
+}
+
+@-webkit-keyframes SliderBoxFirstMoving{
+	0%{
+		top: 0px;
+		left: 0px;
+		bottom: 550px;
+		right: 1160px;
+	}
+	25%{
+		top: 0px;
+		left: 1160px;
+		bottom: 550px;
+		right: 0px;
+	}
+	50%{
+		top: 550px;
+		left: 1160px;
+		bottom: 550px;
+		right: 1160px;
+	}
+	75%{
+		top: 550px;
+		left:0px;
+		bottom:0px;
+		right: 1160px;
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+		bottom: 550px;
+		right: 1160px;
+	}
+}
+
+@-webkit-keyframes SliderBoxSecontMoving{
+	0%{
+		top: 0px;
+		left: 0px;
+		bottom: 550px;
+		right: 1160px;
+	}
+	25%{
+		top: 0px;
+		left: 1160px;
+		bottom: 550px;
+		right: 0px;
+	}
+	50%{
+		top: 550px;
+		left: 1160px;
+		bottom: 550px;
+		right: 1160px;
+	}
+	75%{
+		top: 550px;
+		left:0px;
+		bottom:0px;
+		right: 1160px;
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+		bottom: 550px;
+		right: 1160px;
+	}
+}
+
+@-webkit-keyframes SliderBoxThirdMoving{
+	0%{
+		top: 0px;
+		left: 0px;
+		bottom: 550px;
+		right: 1160px;
+	}
+	25%{
+		top: 0px;
+		left: 1160px;
+		bottom: 550px;
+		right: 0px;
+	}
+	50%{
+		top: 550px;
+		left: 1160px;
+		bottom: 550px;
+		right: 1160px;
+	}
+	75%{
+		top: 550px;
+		left:0px;
+		bottom:0px;
+		right: 1160px;
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+		bottom: 550px;
+		right: 1160px;
+	}
+}
+
+@-webkit-keyframes SliderBoxFourthMoving{
+	0%{
+		top: 0px;
+		left: 0px;
+		bottom: 550px;
+		right: 1160px;
+	}
+	25%{
+		top: 0px;
+		left: 1160px;
+		bottom: 550px;
+		right: 0px;
+	}
+	50%{
+		top: 550px;
+		left: 1160px;
+		bottom: 550px;
+		right: 1160px;
+	}
+	75%{
+		top: 550px;
+		left:0px;
+		bottom:0px;
+		right: 1160px;
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+		bottom: 550px;
+		right: 1160px;
+	}
+}

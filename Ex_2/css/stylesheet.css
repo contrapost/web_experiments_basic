@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+div{
+	width: 200px;
+	height: 250px;
+	background-color: rgb(240, 240, 240);
+	border: 2px solid rgb(216, 216, 216);
+	position: absolute;
+	text-align: center;
+}
+
+#Nyhet_1{
+	left: 0px;
+	
+}
+
+#Nyhet_2{
+	left: 216px;
+
+}
+
+#Nyhet_3{
+	left: 424px;
+
+}
+
+#Nyhet_4{
+	left: 632px;
+
+}
